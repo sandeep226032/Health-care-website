@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: #f1f1f1;
+            }
+
+            .container {
+                background-color: #ffffff;
+                margin: auto;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+                max-width: 500px;
+                margin-top: 50px;
+            }
+
+            h2 {
+                text-align: center;
+                color: #555555;
+                margin-bottom: 30px;
+            }
+
+            input[type=text],
+            input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+            }
+
+           
+
+            .container form {
+                margin: 0 auto;
+                width: 70%;
+            }
+
+            .cancelbtn {
+                background-color: #f44336;
+                color: white;
+                padding: 14px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .cancelbtn:hover {
+                background-color: #d32f2f;
+            }
+
+            @media screen and (max-width: 500px) {
+                .container {
+                    width: 100%;
+                }
+
+                button {
+                    width: 100%;
+                }
+
+                .container form {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <form action="/login" method="post">
+                
+
+                <h2>Appointement  Form</h2>
+
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>phone no</b></label>
+                <input type="password" placeholder="Enter mobile no" name="psw" required>
+                <label for="psw"><b>age</b></label>
+                <input type="password" placeholder="Enter age" name="psw" required>
+
+<label for="psw"><b>reason </b></label>
+<input type="password" placeholder="Enter reason" name="psw" required>
+
+                <button type="submit">submit</button>
+                <button type="button" class="cancelbtn">Cancel</button>
+            </form>
+        </div>
+    </body>
+
+</html>

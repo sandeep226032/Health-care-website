@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dk{
+            background-color: aqua;
+            height: 300px;
+            width: 400px;
+        }
+        #gk{
+            height: 50px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="sk">trying apprent child method</h1>
+    <h1 id="ek">sandeep</h1>
+    <img id="gk" src="health.png" alt="">
+    <button onclick="play()">start magic</button>
+    <div id="dk"></div>
+</body>
+<script>
+    function play(){
+    var a=document.getElementById("sk");
+    var b=document.getElementById("gk");
+    var c=document.getElementById("ek");
+    document.getElementById("dk").appendChild(a);
+    document.getElementById("dk").appendChild(b);
+    document.getElementById("dk").append(c);}
+</script>
+</html>

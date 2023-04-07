@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #nav {
+                background-image: url("https://i.pinimg.com/originals/69/f7/d8/69f7d88e375330b157b6f6d50a380234.jpg");
+                height: 100vh;
+                width: 100%;
+            }
+
+            #do {
+
+                height: 50vh;
+                width: 60vw;
+                border-radius: 15px;
+                margin-left: 250px;
+            }
+
+            #sk {
+                height: 180px;
+                width: 200px;
+                background-color: white;
+
+
+
+            }
+
+            ul,
+            li,
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 15px;
+                padding: 10px;
+            }
+
+            li:hover {
+                background-color: aqua;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="nav">
+            <div>
+                <center>
+                    <h1 style="color: white;font-size: 50px;
+            ">
+                        RS Foundation
+                    </h1>
+                    <h1 style="color:deeppink;">we make a living by we get. <br>we make a life by what we give</h1>
+                    <br>
+                    <button onclick="hide()"
+                        style="height: 50px;width: 100px;background-color:tomato;border-radius: 10px;">
+                        <h2>Donate</h2>
+                    </button>
+                </center></div>
+                &nbsp
+                <div id="do">
+                    <center>
+
+                        <input style="height: 60px;width: 400px;border-radius: 10px;
+                " type="text" placeholder="enter amount"> &nbsp <br> &nbsp <br>
+                        <button onclick="hide1()"
+                            style="height: 50px;width: 200px;border-radius: 10px;background-color: aqua;">pay</button>
+                    <div id="sk">
+                        <center>
+                            <ul>
+                                <li>
+                                    <a href="https://paytm.com/">paytm</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.phonepe.com/hi/index.html">phone pay</a>
+                                </li>
+                                <li>
+                                    <a href="https://pay.google.com/gp/w/home/signup?sctid=1949216425823109">google pay</a>
+                                </li>
+                                <li>
+                                    <a href="">UPI</a>
+                                </li>
+                            </ul>
+                        </center>
+                    </div></center>
+                </div>
+                
+            
+
+
+
+        </div>
+
+    </body>
+    <script>
+        document.getElementById("do").style.display = "none";
+        function hide() {
+            document.getElementById("do").style.display = "block";
+
+        }
+        document.getElementById("sk").style.display = "none";
+        function hide1() {
+            document.getElementById("sk").style.display = "block";
+        }
+    </script>
+
+</html>
